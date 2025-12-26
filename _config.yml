@@ -1,0 +1,46 @@
+# Site settings
+title: SpaceDevs Blog
+description: Conteúdo educativo, tutoriais e conversas sobre o universo da tecnologia
+baseurl: "/blog" # Subpath do seu site, ex: /blog
+url: "/" # URL base do seu site
+email: oi@spacedevs.com.br
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+# Syntax highlighting
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    line_numbers: false
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "SpaceDevs Team"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
