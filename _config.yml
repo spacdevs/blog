@@ -4,6 +4,7 @@ description: Conteúdo educativo, tutoriais e conversas sobre o universo da tecn
 baseurl: "" # Subpath do seu site, ex: /blog
 url: "/" # URL base do seu site
 email: oi@spacedevs.com.br
+repository: "https://github.com/spacdevs/blog"
 
 # Build settings
 markdown: kramdown
